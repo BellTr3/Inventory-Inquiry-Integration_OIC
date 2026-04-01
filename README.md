@@ -50,6 +50,8 @@ This enables **real-time Available-to-Promise (ATP)** decisions — a critical c
 | Invoke 2 | Oracle Fusion SCM — Inventory Reservations API |
 | Response | Structured JSON with calculated quantities per warehouse |
 
+<img src="screenshots/p-2.3.png"/>
+
 ---
 
 ## Key Integration Concepts Applied
@@ -72,6 +74,10 @@ This enables **real-time Available-to-Promise (ATP)** decisions — a critical c
 | `inventoryOnhandBalances` | Physical stock per warehouse | `PrimaryQuantity` |
 | `inventoryReservations` | Stock committed to sales orders | `PrimaryReservationQuantity` |
 
+<img src="screenshots/p-2.4.png"/>
+
+<img src="screenshots/p-2.4.1.png"/>
+
 ---
 
 ## Sample Business Output
@@ -79,6 +85,8 @@ This enables **real-time Available-to-Promise (ATP)** decisions — a critical c
 For item **AS46335 (Vario 5500 Tablet)** across all warehouses:
 
 Reserved quantities reflect real active sales orders in Oracle Fusion — summed per warehouse for accuracy.
+
+<img src="screenshots/p-2.1.png"/>
 
 ---
 
@@ -101,7 +109,9 @@ Any external system — regardless of technology stack — can call this integra
 
 ---
 
-## Testing with Custom API Endpoint
+## Custom API Endpoint Testing
+<img src="screenshots/p-2.5.png"/>
+<img src="screenshots/p-2.6.png"/>
 
 ---
 
