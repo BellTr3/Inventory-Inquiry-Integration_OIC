@@ -109,7 +109,7 @@ Any external system — regardless of technology stack — can call this integra
 
 ---
 
-## Custom API Endpoint Testing
+## Custom API Testing
 <img src="screenshots/p-2.5.png"/>
 <img src="screenshots/p-2.6.png"/>
 
