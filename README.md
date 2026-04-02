@@ -120,3 +120,22 @@ Any external system — regardless of technology stack — can call this integra
 This integration eliminates manual inventory checks, enables real-time order promising, and provides a reusable, scalable REST API that any downstream system can consume. It demonstrates end-to-end OIC integration capability across the full lifecycle — connection setup, orchestration design, dynamic mapping, multi-API coordination, response shaping, and production activation.
 
 ---
+
+## Future Extensions
+
+**Multi-Item Bulk Inquiry**
+Enhance the trigger to accept an array of item numbers in a single request and return inventory balances for all items at once — reducing API call overhead for order batch processing.
+
+**Lot and Serial Number Tracking**
+Integrate the `inventoryOnhandBalances/lots` and `inventoryOnhandBalances/serials` child APIs to return lot-controlled and serialized inventory details — critical for pharma, electronics, and regulated industries.
+
+**Inventory Threshold Alerts**
+Add conditional logic to flag items where `availableQuantity` falls below a configurable threshold — enabling proactive low-stock notifications to procurement or planning teams.
+
+**Caching Layer**
+Introduce a short-lived cache using OIC process variables to avoid redundant Fusion API calls for the same item within a defined time window — improving performance under high request volumes.
+
+**Integration with Order Management**
+Chain this integration with the Order Management module to automatically check available inventory before a sales order is confirmed — creating a seamless Available-to-Promise workflow.
+
+---
